@@ -1,0 +1,14 @@
+.form-control 
+{
+    border: 1px solid #dbdbdb;
+}
+
+label
+{
+    color: #222;
+}
+
+.text-input
+{
+    color: #999;
+}

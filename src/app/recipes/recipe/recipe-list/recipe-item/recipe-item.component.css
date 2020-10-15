@@ -1,0 +1,23 @@
+h3 
+{
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.active a,
+.active a:hover
+{
+    background-color: #007bff !important;
+}
+
+.active a h3
+{
+    color: #f8f8f8 !important;
+} 
+
+.list-group-item a img 
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
