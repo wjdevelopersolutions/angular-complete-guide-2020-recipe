@@ -3,12 +3,10 @@ import { NgModule } from "@angular/core";
 import { RouterModule } from '@angular/router';
 
 // Componentes
-import { EditButtonsComponent } from './edit-buttons/edit-buttons.component';
 import { SidebarNavComponent } from './sidebar-nav/sidebar-nav.component';
 
 const COMP_COMP = [
-    SidebarNavComponent,
-    EditButtonsComponent
+    SidebarNavComponent
 ];
 
 @NgModule({

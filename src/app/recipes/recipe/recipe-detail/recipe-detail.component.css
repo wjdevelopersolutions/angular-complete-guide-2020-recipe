@@ -1,0 +1,44 @@
+.card .card-header
+{
+    position: relative;
+    padding: 0;
+}
+
+.card .card-header .card-header__hover 
+{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(150, 187, 124, 0.603);
+}
+
+.card .card-header:hover
+{
+    cursor: pointer;
+}
+
+.card .card-header .card-header__hover .list-group .list-group-item
+{
+    background-color: transparent;
+    border: none;
+}
+
+.card .card-header .card-header__hover .list-group .list-group-item a
+{
+    color: #fff;
+}
+
+.card .card-header .card-header__hover .list-group .list-group-item a:hover
+{
+    cursor: pointer;
+}
+
+.badge-primary 
+{
+    color: #fff;
+    background-color: #96bb7c;
+}

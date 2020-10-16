@@ -1,28 +1,39 @@
 <div class="card mt-2">
-  <img [src]="recipe.imagen" class="card-img-top" [alt]="recipe.title">
+  <div class="card-header" cardHeader>
+    <div class="card-header__hover">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+              <a><i class="icofont icofont-heart icofont-2x"></i> 16</a>
+            </li>
+            <li class="list-group-item">
+              <a><i class="icofont icofont-star icofont-2x"></i></a>
+            </li>
+          </ul>
+    </div>
+    <img [src]="recipe.imagen" class="card-img-top" [alt]="recipe.title">
+  </div>
   <div class="card-body">
     <h5 class="card-title"> {{ recipe.title }} </h5>
     <p class="card-text"> {{ recipe.description }}</p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Ingredientes
+      <span class="badge badge-primary badge-pill">14</span>
+    </li>
   </ul>
   <div class="card-body">
-    <a   
-      (click)="onRecipeEdit($event)"
-      href="#" 
-      class="card-link">
+
+    <button (click)="onRecipeEdit($event)" class="btn btn-primary btn-block">
       <i class="icofont icofont-ui-edit"></i>
       Editar
-    </a>
-    <a 
-      (click)="onRecipeDelete($event)"
-      href="#" 
-      class="card-link">
+    </button>
+    <button (click)="onRecipeDelete($event)" class="btn btn-danger btn-block">
       <i class="icofont icofont-ui-delete"></i>
-      Eliminar</a>
+      Eliminar
+    </button>
+    <!-- <a href="#" (click)="onRecipeEdit($event)" class="card-link"> <i class="icofont icofont-ui-edit"></i> Editar</a>
+    <a href="#" (click)="onRecipeDelete($event)" class="card-link"> <i class="icofont icofont-ui-delete"></i> Eliminar</a> -->
   </div>
 </div>
 

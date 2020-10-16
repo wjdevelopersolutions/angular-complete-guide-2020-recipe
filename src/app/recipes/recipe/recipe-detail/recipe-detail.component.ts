@@ -40,7 +40,6 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-
     this.index = Number(this._route.snapshot.params.id);
     this.recipe = this._srecipeService.getRecipes()[this.index];
     this.subscription = this._route.params
@@ -48,7 +47,6 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
         this.index = Number(params.id);
         this.recipe = this._srecipeService.getRecipes()[this.index];
       });
-
   }
 
   ngOnDestroy(): void {

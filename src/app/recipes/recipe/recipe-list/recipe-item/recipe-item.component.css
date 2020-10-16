@@ -4,13 +4,14 @@ h3
     margin: 0;
 }
 
-.active a,
-.active a:hover
-{
-    background-color: #007bff !important;
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #96bb7c;
+    border-color: #f8f8f8;
 }
 
-.active a h3
+.list-group-item.active h3
 {
     color: #f8f8f8 !important;
 } 

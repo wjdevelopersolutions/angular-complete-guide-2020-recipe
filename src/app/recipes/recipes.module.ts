@@ -18,6 +18,11 @@ import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-ite
 import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
 import { RecipeAlertComponent } from './recipe/recipe-alert/recipe-alert.component';
 
+/**
+ * Directives
+ */
+import { CardHeaderDirective } from '../directives/card-header.directive';
+
 const RECIPES_COMPONENTS = [
     RecipesComponent,
     RecipeComponent,
@@ -26,6 +31,7 @@ const RECIPES_COMPONENTS = [
     RecipeItemComponent,
     RecipeDetailComponent,
     RecipeAlertComponent,
+    CardHeaderDirective
 ];
 
 @NgModule({
